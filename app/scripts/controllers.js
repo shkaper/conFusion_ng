@@ -92,4 +92,17 @@ angular.module('confusionApp')
             $scope.comment.rating = 5;
             $scope.commentForm.$setPristine();
         }
-    }]);
+    }])
+
+    .controller('IndexController', ['$scope', 'menuFactory', 'corporateFactory', function ($scope, menuFactory, corporateFactory){
+
+        $scope.featuredDish = menuFactory.getDish(0);
+        $scope.leader = corporateFactory.getLeader(3);
+        $scope.promotion = menuFactory.getPromotion(0);
+    }])
+
+    .controller('AboutController', ['$scope', 'corporateFactory', function ($scope, corporateFactory) {
+
+        $scope.leaders = corporateFactory.getLeaders();
+    }])
+;
