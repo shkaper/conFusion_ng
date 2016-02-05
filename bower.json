@@ -1,16 +1,10 @@
 {
   "name": "conFusion",
-  "version": "1.0.0",
-  "description": "Website for an awesome restaurant",
+  "version": "0.4.0",
+  "description": "",
   "main": "index.html",
-  "moduleType": [],
-  "keywords": [
-    "conFusion",
-    "Fusion",
-    "Restaurant"
-  ],
   "authors": [
-    "Jogesh Muppala"
+    "Shkaper"
   ],
   "license": "MIT",
   "homepage": "",
